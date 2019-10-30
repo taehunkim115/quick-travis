@@ -8,13 +8,13 @@ import firebase from 'firebase/app';
 import 'firebase/database';
  
 const firebaseConfig = {
-  apiKey: "AIzaSyAFzpavaaS5qMRo8FSZsqsZAaglgXL8H04",
-  authDomain: "teamie-blue.firebaseapp.com",
-  databaseURL: "https://teamie-blue.firebaseio.com",
-  projectId: "teamie-blue",
-  storageBucket: "teamie-blue.appspot.com",
-  messagingSenderId: "373175945503",
-  appId: "1:373175945503:web:0ce516f07c5d387642882a"
+  apiKey: "AIzaSyDVtP9EC9kWtlGo1RR_CVutxoRDv29mb7A",
+  authDomain: "quick-travis.firebaseapp.com",
+  databaseURL: "https://quick-travis.firebaseio.com",
+  projectId: "quick-travis",
+  storageBucket: "quick-travis.appspot.com",
+  messagingSenderId: "655216562924",
+  appId: "1:655216562924:web:d27d1f01102e0368b50bc9"
 };
 
 firebase.initializeApp(firebaseConfig);
