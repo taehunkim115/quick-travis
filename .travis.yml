@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10.16.3"
+  - "stable"
 cache:
   directories:
   - node_modules
@@ -9,4 +9,4 @@ script:
   - npm run build
 after_success:
   - npm install -g firebase-tools
-  - firebase deploy --token "1//04GeE_O4hFMcbCgYIARAAGAQSNwF-L9Ir0hU2R5cSgMb_9qEwhLI2d-7lFTqN-r0mXmfj9Jq6-STuR6TSXwll60NFOg8FXMGcaGE" --non-interactive
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
