@@ -65,7 +65,7 @@ const useStyles = makeStyles(theme => ({
     
     return(
       <div>
-        <Typography variant="h5" component="h3">Poll</Typography>
+        <Typography variant="h5" component="h3">Test</Typography>
         <GridList>
           <GridListTile>
 
