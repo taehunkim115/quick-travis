@@ -3,6 +3,7 @@ node_js:
   - "node"
 script:
   - npm test
+  - npm run builds
 after_success:
   - npm install -g firebase-tools
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
