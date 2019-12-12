@@ -321,7 +321,9 @@ const RestaurantList = ({restaurants, selectedRestaurants, setSelectedRestaurant
                 </Grid> */}
 
                 <Grid item xs={6}>
-                    {filteredRestaurants.map(r => <Restaurant key={r.id} 
+                    {filteredRestaurants.map(r => <Restaurant 
+                                        data-cy="restaurants"
+                                        key={r.id} 
                                         restaurant={r}
                                         selectedRestaurants={selectedRestaurants}
                                         setSelectedRestaurants={setSelectedRestaurants}
