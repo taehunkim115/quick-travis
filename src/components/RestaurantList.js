@@ -221,7 +221,7 @@ const AmbienceFilter = ({setVibe}) => {
   };
 
   return (
-    <form className={classes.root} autoComplete="off">
+    <form data-cy="vibe" className={classes.root} autoComplete="off">
       <FormControl className={classes.formControl}>
         <InputLabel htmlFor="age-simple">The vibe we want</InputLabel>
         <Select
@@ -233,7 +233,7 @@ const AmbienceFilter = ({setVibe}) => {
           }}
         >
           <MenuItem value={10}>Happy Hour</MenuItem>
-          <MenuItem value={20}>Good for clients</MenuItem>
+          <MenuItem data-cy="goodforclient" value={20}>Good for clients</MenuItem>
           <MenuItem value={20}>Family Friendly</MenuItem>
           <MenuItem value={20}>Internal team bonding</MenuItem>
           
@@ -322,7 +322,6 @@ const RestaurantList = ({restaurants, selectedRestaurants, setSelectedRestaurant
 
                 <Grid item xs={6}>
                     {filteredRestaurants.map(r => <Restaurant 
-                                        data-cy="restaurants"
                                         key={r.id} 
                                         restaurant={r}
                                         selectedRestaurants={selectedRestaurants}
